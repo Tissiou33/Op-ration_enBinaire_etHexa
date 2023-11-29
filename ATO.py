@@ -2,6 +2,7 @@
 import sys
 
 def enter_entier():
+    #cette fonction vérifie le type du nombre entré
     while True:
         try:
             nombre = int(input("Entrer un nombre : "))
@@ -10,6 +11,7 @@ def enter_entier():
             print("Entrz un entier")
 
 def conversion_binaire(n):
+    #conversion des nombre decimaux en binaire
     print("")
     binaire = []
     valeur = ''
@@ -31,12 +33,14 @@ def conversion_binaire(n):
     return valeur
 
 def conv_h(n):
+    #Retourne le reste (modulo) des nombre hexadécimaux
     print("")
     possibilite = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
     val = possibilite[n]
     return val
 
 def conversion_hexa(n):
+    #convertit les décimaux en hexadécimaux
     print('Conversion en Hexadécimal')
     hexadecimal = []
     val = ''
